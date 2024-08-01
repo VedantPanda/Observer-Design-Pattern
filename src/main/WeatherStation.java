@@ -1,5 +1,10 @@
 package main;
 
+import main.Publisher.impl.WeatherData;
+import main.Subscriber.impl.CurrentConditionsDisplay;
+import main.Subscriber.impl.ForecastDisplay;
+import main.Subscriber.impl.StatisticsDisplay;
+
 public class WeatherStation {
     public static void main(String[] args) {
 

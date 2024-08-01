@@ -1,20 +1,24 @@
-package main;
+package main.Subscriber.impl;
 
-public class ForecastDisplay implements Displays, Subscriber{
+import main.Publisher.Publisher;
+import main.Subscriber.Displays;
+import main.Subscriber.Subscriber;
+
+public class StatisticsDisplay implements Displays, Subscriber {
 
     private float temperature, humidity, pressure;
 
     private Publisher publisher;
 
-    public ForecastDisplay(Publisher publisher){
+    public StatisticsDisplay(Publisher publisher){
         this.publisher = publisher;
         this.publisher.addSubscriber(this);
     }
 
     @Override
     public void display() {
-        System.out.println("Displaying the forecast");
-        System.out.println("Temperature: "+temperature+" Humidity: "+humidity+" Pressure: "+pressure);
+        System.out.println("Displaying the statistics");
+        System.out.println("Temperature: "+temperature+" Pressure: "+pressure+" Humidity: "+humidity);
     }
 
     @Override

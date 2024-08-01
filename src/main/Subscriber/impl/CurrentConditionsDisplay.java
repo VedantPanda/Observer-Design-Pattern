@@ -1,6 +1,10 @@
-package main;
+package main.Subscriber.impl;
 
-public class CurrentConditionsDisplay implements Displays, Subscriber{
+import main.Publisher.Publisher;
+import main.Subscriber.Displays;
+import main.Subscriber.Subscriber;
+
+public class CurrentConditionsDisplay implements Displays, Subscriber {
 
     private float temperature, humidity;
 

@@ -1,4 +1,4 @@
-package main;
+package main.Subscriber;
 
 public interface Displays {
     void display();

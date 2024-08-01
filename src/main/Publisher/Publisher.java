@@ -1,4 +1,6 @@
-package main;
+package main.Publisher;
+
+import main.Subscriber.Subscriber;
 
 public interface Publisher {
     void addSubscriber(Subscriber subscriber);

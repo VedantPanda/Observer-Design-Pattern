@@ -1,9 +1,12 @@
-package main;
+package main.Publisher.impl;
+
+import main.Publisher.Publisher;
+import main.Subscriber.Subscriber;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class WeatherData implements Publisher{
+public class WeatherData implements Publisher {
 
     private float temperature, humidity, pressure;
 
